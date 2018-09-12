@@ -1,0 +1,87 @@
+.me {
+	width: 150px;
+	float: right;
+}
+
+div {
+	border: solid 3px black;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+h1, h2 {
+	font-family: 'Rubik', sans-serif;
+
+}
+
+p {
+	font-family: 'Roboto Mono', monospace;
+
+}
+
+
+
+body {
+	display: grid;
+	grid-row-gap: 10px;
+	grid-template-areas: 
+		"title"
+		"info"
+		"challenge1"
+		"challenge2"
+		"challenge3"
+		"excursie"
+		"reflectie"
+}
+
+header {
+	grid-area: title;
+	text-align: center;
+}
+
+.main {
+	grid-area: info;
+	
+}
+
+.challenge1 {
+	grid-area: challenge1;
+	
+	
+}
+
+.challenge2 {
+	grid-area: challenge2;
+	
+
+}
+
+.challenge3 {
+	grid-area: challenge3;
+	
+}
+
+.excursie {
+	grid-area: excursie;
+	
+}
+
+.reflectie {
+	grid-area: reflectie;
+	
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		grid-row-gap: 10px;
+		grid-column-gap: 10px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 0fr 1fr 1fr 1fr;
+		grid-template-areas: 
+			"title title"
+			"info challenge1"
+			"challenge2 challenge3"
+			"excursie reflectie"
+			
+	}
+}
